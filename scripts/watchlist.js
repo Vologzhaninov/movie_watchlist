@@ -19,6 +19,9 @@ function createReadMoreBlock(text) {
     }
 
 function renderWatchList() {
+    if (movieWatchList.length === 0) {
+        return
+    }
     let html = ''
     for (let movie of movieWatchList) {   
         html += `
@@ -55,7 +58,7 @@ movieMain.addEventListener('click', (event) => {
             movieWatchList.splice(index, 1)
             localStorage.setItem('movieWatchList', JSON.stringify(movieWatchList))
         }
-        renderWatchList()           
+        window.location.reload()           
     }
     if (event.target.classList.contains('read-more-btn')) {
         const readMoreBtn = event.target

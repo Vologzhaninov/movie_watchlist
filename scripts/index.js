@@ -14,7 +14,7 @@ modalBtn.addEventListener('click', () => {
         apiKey = inputKey
         localStorage.setItem('omdbAPIkey', inputKey)
     }
-    modalBox.style.display = 'none'
+    window.location.reload()   
 })
 
 window.addEventListener('click', (event) => {
