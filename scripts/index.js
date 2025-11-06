@@ -1,4 +1,4 @@
-const url = 'http://www.omdbapi.com/?apikey='
+const url = 'https://www.omdbapi.com/?apikey='
 const searchInput = document.getElementById('search-input')
 const searchBtn = document.getElementById('search-btn')
 const movieMain = document.getElementById('movie-main')
