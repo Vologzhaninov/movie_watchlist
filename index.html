@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Movie watch list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Find your film</h1>
+      <nav><a href="watchlist.html">My Watchlist</a></nav>
+    </header>
+    <search>
+      <input id="search-input" type="text" placeholder="Search for a movie"/>
+      <button id="search-btn">Search</button>
+    </search>
+    <main id="movie-main">
+      <img class="movie-icon" src="./images/movie.png" alt="Film icon" />
+      <p>Start exploring</p>
+    </main>
+    <div class="modal-box" id="modal-box">
+      <input class="modal-input" id="modal-input" type="text" placeholder="Enter your API Key"/>
+      <button class="modal-btn" id="modal-btn">Add</button>
+      <p>or get it from <a href="https://www.omdbapi.com" target="_blank">www.omdbapi.com</a> </p>
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

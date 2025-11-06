@@ -1,0 +1,21 @@
+main p {
+    color: #a5a5a5;
+}
+
+.p-message {
+    margin-top: 5em;
+}
+
+.p-add-some {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+span {
+    padding-inline-start: 0.5em;
+    padding-inline-end: 0.5em;
+}
