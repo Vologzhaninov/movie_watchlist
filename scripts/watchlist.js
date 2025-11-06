@@ -19,9 +19,6 @@ function createReadMoreBlock(text) {
     }
 
 function renderWatchList() {
-    if (movieWatchList.length === 0) {
-        return
-    }
     let html = ''
     for (let movie of movieWatchList) {   
         html += `
@@ -79,4 +76,6 @@ movieMain.addEventListener('click', (event) => {
     }
 })
 
-renderWatchList()
+if (movieWatchList.length !== 0) {
+    renderWatchList()
+}
